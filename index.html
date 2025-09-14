@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">VTubersLife</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/images/logo.png">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><img src="assets/images/logo.png" width="48px" height="48px" alt="logo img" draggable="false">VTubersLife</div>
+      <nav class="nav">
+        <select id="language-switcher">
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+          <option value="ar">العربية</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero fade-in">
+    <div class="container">
+      <div class="hero-bg"></div>
+      <h1 data-i18n="hero_title">VTubersLife — живи виртуально</h1>
+      <p data-i18n="hero_subtitle">Создавайте уникальный виртуальный контент с помощью передовых технологий.</p>
+      <ul>
+        <li data-i18n="hero_feature_1">Отслеживание движений с веб-камеры</li>
+        <li data-i18n="hero_feature_2">Распознавание эмоций в реальном времени</li>
+        <li data-i18n="hero_feature_3">Поддержка 2D и 3D моделей</li>
+        <li data-i18n="hero_feature_4">Быстрые алгоритмы обработки</li>
+        <li data-i18n="hero_feature_5">Гибкая кастомизация персонажей</li>
+        <li data-i18n="hero_feature_6">Интеграция с популярными платформами</li>
+      </ul>
+      <div class="btn-group">
+        <a href="#" class="btn" data-i18n="download_windows">Скачать для Windows</a>
+        <a href="#" class="btn" data-i18n="download_mac">Скачать для Mac</a>
+        <a href="#" class="btn" data-i18n="download_mobile">Мобильная версия</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="screens fade-in">
+    <div class="container">
+      <h2 data-i18n="screenshots_title fade-in">Скриншоты</h2>
+      <div class="slider fade-in">
+        <div class="slides">
+          <img src="assets/images/1.png" draggable="false" alt="Скриншот 1">
+          <img src="assets/images/2.png" draggable="false" alt="Скриншот 2">
+          <img src="assets/images/3.png" draggable="false" alt="Скриншот 3">
+          <img src="assets/images/4.png" draggable="false" alt="Скриншот 4">
+        </div>
+        <div class="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe fade-in">
+    <div class="container">
+      <h2 data-i18n="subscribe_title fade-in">Подпишитесь на обновления</h2>
+      <p data-i18n="subscribe_text fade-in">Получайте новости о новых функциях и обновлениях VTubersLife!</p>
+      <form id="subform" class="fade-in">
+        <div class="form-group">
+          <input type="email" id="subscribe_input" name="email" data-i18n-placeholder="subscribe_placeholder" placeholder="Введите ваш email">
+          <div class="subscribe_error"></div>
+        </div>
+        <button type="submit" class="btn" data-i18n="subscribe_button">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="plans fade-in">
+    <div class="container">
+      <h2 data-i18n="plans_title fade-in">Выберите ваш план</h2>
+      <div class="plans-grid">
+        <div class="plan fade-in">
+          <h3 data-i18n="plan_free_title">Free</h3>
+          <div class="price" data-i18n="plan_free_price">0$/мес</div>
+          <p data-i18n="plan_free_desc">Базовый функционал для старта</p>
+          <ul>
+            <li><span class="like">✔</span><span data-i18n="plan_free_feature_1">Отслеживание движений</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_free_feature_2">Распознавание эмоций</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_free_feature_3">Поддержка 2D/3D моделей</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_free_feature_4">Хорошая обработка кадров</span></li>
+            <li><span class="dislike">✖</span><span data-i18n="plan_free_feature_5">Определение взгляда</span></li>
+            <li><span class="dislike">✖</span><span data-i18n="plan_free_feature_6">Кастомизация</span></li>
+            <li><span class="dislike">✖</span><span data-i18n="plan_free_feature_7">Эксклюзивные эффекты</span></li>
+          </ul>
+          <a href="#" class="btn" data-i18n="plan_free_button">Выбрать</a>
+        </div>
+
+        <div class="plan popular fade-in">
+          <div class="badge" data-i18n="plan_standard_badge">Популярно</div>
+          <h3 data-i18n="plan_standard_title">Standard</h3>
+          <div class="price" data-i18n="plan_standard_price">20$/мес</div>
+          <p data-i18n="plan_standard_desc">Расширенные возможности</p>
+          <ul>
+            <li><span class="like">✔</span><span data-i18n="plan_standard_feature_1">Отслеживание движений</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_standard_high_1" class="plan-good"></span><span data-i18n="plan_standard_feature_2">распознавание эмоций</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_standard_feature_3">Поддержка 2D/3D моделей</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_standard_high_2" class="plan-good"></span> <span data-i18n="plan_standard_feature_4">обработка кадров</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_standard_feature_5">Определение взгляда</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_standard_high_3" class="plan-good"></span><span data-i18n="plan_standard_feature_6">кастомизация</span></li>
+            <li><span class="dislike">✖</span><span data-i18n="plan_standard_feature_7">Эксклюзивные эффекты</span></li>
+          </ul>
+          <a href="#" class="btn" data-i18n="plan_standard_button">Выбрать</a>
+        </div>
+
+        <div class="plan premium fade-in">
+          <div class="badge" data-i18n="plan_premium_badge">Выгодно</div>
+          <h3 data-i18n="plan_premium_title">Premium</h3>
+          <div class="price" data-i18n="plan_premium_price">100$/мес</div>
+          <p data-i18n="plan_premium_desc">Максимальный функционал</p>
+          <ul>
+            <li><span class="like">✔</span><span data-i18n="plan_premium_feature_1">Отслеживание движений</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_premium_high_1" class="plan-beautiful"></span><span data-i18n="plan_premium_feature_2">распознавание эмоций</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_premium_feature_3">Поддержка 2D/3D моделей</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_premium_high_2" class="plan-beautiful"></span><span data-i18n="plan_premium_feature_4">Моментальная обработка кадров</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_premium_high_3" class="plan-beautiful"></span><span data-i18n="plan_premium_feature_5">Определение взгляда</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_premium_high_4" class="plan-beautiful"></span><span data-i18n="plan_premium_feature_6">Кастомизация</span></li>
+            <li><span class="like">✔</span><span data-i18n="plan_premium_feature_7">Эксклюзивные эффекты</span></li>
+          </ul>
+          <a href="#" class="btn fade-in" data-i18n="plan_premium_button">Выбрать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages fade-in">
+    <div class="container">
+      <h2 data-i18n="advantages_title" class="fade-in">Наши преимущества</h2>
+      <div class="advantages-grid fade-in">
+        <div class="advantage-card">
+          <span class="advantage-icon">🎯</span>
+          <h3 data-i18n="advantage_1_title">Высокая точность</h3>
+          <p data-i18n="advantage_1_desc">Наши алгоритмы обеспечивают точное отслеживание движений и эмоций.</p>
+        </div>
+        <div class="advantage-card fade-in">
+          <span class="advantage-icon">🚀</span>
+          <h3 data-i18n="advantage_2_title">Простота использования</h3>
+          <p data-i18n="advantage_2_desc">Интуитивный интерфейс для быстрого старта.</p>
+        </div>
+        <div class="advantage-card fade-in">
+          <span class="advantage-icon">🌐</span>
+          <h3 data-i18n="advantage_3_title">Кроссплатформенность</h3>
+          <p data-i18n="advantage_3_desc">Работает на Windows, Mac и мобильных устройствах.</p>
+        </div>
+        <div class="advantage-card fade-in">
+          <span class="advantage-icon">🤝</span>
+          <h3 data-i18n="advantage_4_title">Поддержка сообщества</h3>
+          <p data-i18n="advantage_4_desc">Активное сообщество и регулярные обновления.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer fade-in">
+    <div class="container">
+      <div class="footer-content">
+        <p data-i18n="footer_copyright" class="fade-in">© 2025 VTubersLife Team. Все права защищены.</p>
+        <div class="footer-links">
+          <a href="#" data-i18n="footer_privacy" class="fade-in">Политика конфиденциальности</a>
+          <a href="#" data-i18n="footer_data" class="fade-in">Обработка данных</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="support">?</div>
+
+  <div id="notification" data-i18n="subscribed"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
